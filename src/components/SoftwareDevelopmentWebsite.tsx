@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
-import { ArrowRight, ChevronRight, Menu, X, Code, Zap, Settings2, Sparkles } from "lucide-react"
+import { ArrowRight, ChevronRight, Menu, X, Wifi, Zap, Settings2, Wrench } from "lucide-react"
 import { motion, type Variants } from "framer-motion"
 import { GridMotion } from "./ui/grid-motion"
 import { cn } from "@/lib/utils"
@@ -227,9 +227,9 @@ const Logo = ({ className }: { className?: string }) => {
   return (
     <div className={cn("flex items-center space-x-2", className)}>
       <div className="bg-orange-500 rounded-lg p-2">
-        <Code className="h-6 w-6 text-white" />
+        <Wifi className="h-6 w-6 text-white" />
       </div>
-      <span className="text-xl font-bold">КодМастер</span>
+      <span className="text-xl font-bold">АСТРАШИНА М2М</span>
     </div>
   )
 }
@@ -301,7 +301,7 @@ export default function SoftwareDevelopmentWebsite() {
                     href="#services"
                     className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-black/5 transition-all duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
                   >
-                    <span className="text-foreground text-sm">Индивидуальные решения для малого бизнеса</span>
+                    <span className="text-foreground text-sm">IT, IoT и телеком-решения для бизнеса в Астрахани</span>
                     <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
 
                     <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
@@ -317,14 +317,14 @@ export default function SoftwareDevelopmentWebsite() {
                   </a>
 
                   <h1 className="mt-8 max-w-4xl mx-auto text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
-                    Трансформируйте бизнес с{" "}
+                    Технологии и связь для{" "}
                     <span className="inline-block text-orange-500 text-6xl md:text-7xl xl:text-[5.25rem] font-semibold">
-                      современным ПО
+                      вашего бизнеса
                     </span>
                   </h1>
                   <p className="mx-auto mt-8 max-w-2xl text-balance text-lg text-muted-foreground">
-                    Создаем масштабируемые и эффективные программные решения под ваши бизнес-задачи.
-                    От веб-приложений до мобильных приложений - помогаем малому бизнесу расти с помощью технологий.
+                    АСТРАШИНА М2М — ваш партнёр в сфере IT, беспроводных коммуникаций и обслуживания техники в Астрахани.
+                    От IoT-решений до ремонта автотранспортной электроники — всё в одном месте.
                   </p>
                 </AnimatedGroup>
 
@@ -344,11 +344,11 @@ export default function SoftwareDevelopmentWebsite() {
                 >
                   <div key={1} className="bg-orange-500/10 rounded-[14px] border border-orange-200 p-0.5">
                     <Button size="lg" className="rounded-xl px-5 text-base bg-orange-500 hover:bg-orange-600">
-                      <span className="text-nowrap">Бесплатная консультация</span>
+                      <span className="text-nowrap">Связаться с нами</span>
                     </Button>
                   </div>
                   <Button key={2} size="lg" variant="ghost" className="h-10.5 rounded-xl px-5 hover:text-orange-500">
-                    <span className="text-nowrap">Наши работы</span>
+                    <span className="text-nowrap">Наши услуги</span>
                   </Button>
                 </AnimatedGroup>
               </div>
@@ -383,7 +383,7 @@ export default function SoftwareDevelopmentWebsite() {
                 <div className="group relative m-auto max-w-5xl px-6">
                   <div className="absolute inset-0 z-10 flex scale-95 items-center justify-center opacity-0 duration-500 group-hover:scale-100 group-hover:opacity-100">
                     <a href="#contact" className="block text-sm duration-150 hover:opacity-75 text-orange-500">
-                      <span>Готовы начать проект?</span>
+                      <span>Обсудить задачу?</span>
                       <ChevronRight className="ml-1 inline-block size-3" />
                     </a>
                   </div>
@@ -471,25 +471,25 @@ export default function SoftwareDevelopmentWebsite() {
           <div className="mx-auto max-w-5xl px-6">
             <div className="text-center">
               <h2 className="text-balance text-4xl font-semibold lg:text-5xl">
-                Почему выбирают <span className="text-orange-500">КодМастер</span>
+                Почему выбирают <span className="text-orange-500">АСТРАШИНА М2М</span>
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Мы создаем качественные программные решения, которые помогают вашему бизнесу расти и преуспевать в цифровом мире.
+                Комплексный подход: от беспроводных сетей и IoT до ремонта техники и IT-сопровождения бизнеса.
               </p>
             </div>
             <Card className="mx-auto mt-8 grid max-w-sm divide-y overflow-hidden shadow-zinc-950/5 border-orange-200 *:text-center md:mt-16 md:max-w-full md:grid-cols-3 md:divide-x md:divide-y-0">
               <div className="group shadow-zinc-950/5">
                 <CardHeader className="pb-3">
                   <CardDecorator>
-                    <Zap className="size-6 text-orange-500" aria-hidden />
+                    <Wifi className="size-6 text-orange-500" aria-hidden />
                   </CardDecorator>
 
-                  <h3 className="mt-6 font-medium">Быстрая разработка</h3>
+                  <h3 className="mt-6 font-medium">Беспроводные технологии</h3>
                 </CardHeader>
 
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Быстрое прототипирование и гибкий процесс разработки для скорейшего вывода вашего продукта на рынок.
+                    Проектируем и внедряем IoT и M2M-решения для удалённого мониторинга, управления и передачи данных.
                   </p>
                 </CardContent>
               </div>
@@ -500,12 +500,12 @@ export default function SoftwareDevelopmentWebsite() {
                     <Settings2 className="size-6 text-orange-500" aria-hidden />
                   </CardDecorator>
 
-                  <h3 className="mt-6 font-medium">Масштабируемые решения</h3>
+                  <h3 className="mt-6 font-medium">IT-сопровождение</h3>
                 </CardHeader>
 
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Созданы для роста вместе с вашим бизнесом - наши решения масштабируются по мере развития ваших потребностей.
+                    Полный цикл IT-услуг: от настройки оборудования и программного обеспечения до технической поддержки бизнеса.
                   </p>
                 </CardContent>
               </div>
@@ -513,15 +513,15 @@ export default function SoftwareDevelopmentWebsite() {
               <div className="group shadow-zinc-950/5">
                 <CardHeader className="pb-3">
                   <CardDecorator>
-                    <Sparkles className="size-6 text-orange-500" aria-hidden />
+                    <Wrench className="size-6 text-orange-500" aria-hidden />
                   </CardDecorator>
 
-                  <h3 className="mt-6 font-medium">Современные технологии</h3>
+                  <h3 className="mt-6 font-medium">Ремонт и обслуживание</h3>
                 </CardHeader>
 
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Используем новейшие технологии и лучшие практики, чтобы ваше ПО было готово к будущему.
+                    Техническое обслуживание и ремонт автотранспортных средств, мотоциклов и компьютерной техники — всё под одной крышей.
                   </p>
                 </CardContent>
               </div>
@@ -537,7 +537,7 @@ export default function SoftwareDevelopmentWebsite() {
             <div className="space-y-4 sm:col-span-2 lg:col-span-1">
               <Logo />
               <p className="text-sm text-muted-foreground max-w-xs">
-                Трансформируйте свой бизнес с помощью индивидуальных программных решений. Создаем масштабируемые приложения, которые растут вместе с вашим успехом.
+                IT, IoT и телеком-решения для бизнеса в Астрахани. Зарегистрированы в 2023 году. Работаем комплексно — от беспроводных сетей до ремонта техники.
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
@@ -564,27 +564,27 @@ export default function SoftwareDevelopmentWebsite() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Веб-разработка
+                    IoT и M2M-решения
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Мобильные приложения
+                    Беспроводные сети
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Заказное ПО
+                    IT-сопровождение
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Разработка API
+                    Ремонт автотехники
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Облачные решения
+                    Компьютеры и ПО
                   </a>
                 </li>
               </ul>
@@ -635,7 +635,7 @@ export default function SoftwareDevelopmentWebsite() {
                       d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                  <span className="break-all">info@kodmaster.ru</span>
+                  <span className="break-all">info@astrashina-m2m.ru</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <svg className="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -646,7 +646,7 @@ export default function SoftwareDevelopmentWebsite() {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  <span>+7 (495) 123-45-67</span>
+                  <span>+7 (851) 000-00-00</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <svg className="h-4 w-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -664,9 +664,9 @@ export default function SoftwareDevelopmentWebsite() {
                     />
                   </svg>
                   <span>
-                    ул. Технопарковая, 15
+                    ул. Николая Ветошникова, 1б, пом. 1/3
                     <br />
-                    Москва, 123456
+                    Астрахань
                   </span>
                 </li>
               </ul>
@@ -676,7 +676,7 @@ export default function SoftwareDevelopmentWebsite() {
           {/* Bottom section */}
           <div className="mt-12 pt-8 border-t border-orange-200">
             <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-              <div className="text-sm text-muted-foreground">2024 КодМастер. Все права защищены.</div>
+              <div className="text-sm text-muted-foreground">© 2024 ООО «АСТРАШИНА М2М». Все права защищены.</div>
               <div className="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2 text-sm">
                 <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
                   Политика конфиденциальности
